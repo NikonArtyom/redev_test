@@ -1,10 +1,13 @@
 import '../App.css';
-import Number from './Todo/props/Number';
-import String from './Todo/props/String';
-import Boolean from './Todo/props/Boolean';
-import Object from './Todo/props/Object';
-import Array from './Todo/props/Array';
-import Function from './Todo/props/Function';
+import Number from './Todo/Props/Number';
+import String from './Todo/Props/String';
+import Boolean from './Todo/Props/Boolean';
+import Object from './Todo/Props/Object';
+import Array from './Todo/Props/Array';
+import Function from './Todo/Props/Function';
+import Counter from './Todo/State/Counter';
+import Show from './Todo/State/Show'
+import Input from './Todo/State/Input';
 
 function App() {
 
@@ -19,12 +22,20 @@ function App() {
 
     <div className="App">
 
-      <Number num={12345} />
-      <String str={'Hello'} />
-      <Boolean isTrue={true} />
-      <Object obj={obj} />
-      <Array arr={arr} />
-      <Function func={func("+ your name")} />
+      <div className='props'>
+        <Number num={12345} />
+        <String str={'Hello'} />
+        <Boolean isTrue={true} />
+        <Object obj={obj} />
+        <Array arr={arr} />
+        <Function func={func("+ your name")} />
+      </div>
+
+      <div className='state'>
+        <Counter />
+        <Show />
+        <Input />
+      </div>
 
     </div>
   );
