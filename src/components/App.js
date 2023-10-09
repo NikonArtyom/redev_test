@@ -16,6 +16,7 @@ function App() {
   const func = (str) => `Hello ${str}`;
 
   return (
+
     <div className="App">
 
       <Number num={12345} />
