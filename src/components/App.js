@@ -8,6 +8,7 @@ import Function from './Todo/Props/Function';
 import Counter from './Todo/State/Counter';
 import Show from './Todo/State/Show'
 import Input from './Todo/State/Input';
+import Color from './Todo/State/Color';
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
         <Counter />
         <Show />
         <Input />
+        <Color />
       </div>
 
     </div>
