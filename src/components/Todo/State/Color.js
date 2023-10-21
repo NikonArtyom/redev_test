@@ -2,9 +2,9 @@ import React, { useState } from "react";
 
 const Color = () => {
 
-    const [color, SetColor] = useState('red');
+    const [color, setColor] = useState('red');
 
-    const handleClick = () => SetColor(color === 'red' ? 'blue' : 'orange');
+    const handleClick = () => setColor(color === 'red' ? 'blue' : 'orange');
 
     const style = {
         color: color

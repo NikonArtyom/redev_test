@@ -7,7 +7,7 @@ const Show = () => {
 
     return (
         <div className="show">
-            {showText ? <p>"Текс показан или скрыт"</p> : null}
+            {showText && <p>"Текс показан или скрыт"</p>}
             <button onClick={handleClick}>Показать/скрыть текст</button>
         </div>
     )
